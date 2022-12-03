@@ -1,0 +1,197 @@
+
+
+/* ul,ol{
+    list-style: none;
+
+} */
+
+/* a{
+    text-decoration: none; так любий тег можна,
+        для всіх елементів
+/* } */  
+body {
+    font-family: 'Roboto',sans-serif;
+    color: #434455;
+}
+
+.list   {
+    list-style: none;
+}
+
+.link   {
+    text-decoration: none;
+}
+.text {
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+     color: #434455;
+}
+
+.title {
+    font-family: 'Roboto',sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+
+
+
+
+
+/* =======HEADER======== */
+
+.page-header {}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4D5AE5;
+}
+.logo:hover,
+.logo:focus {
+    color: #4D5AE5;
+}
+
+.navigation {}
+
+.menu {}
+
+.menu-item {}
+
+.menu-link {
+    font-family: 'Roboto',sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+.menu-link:hover,
+.menu-link:focus   {
+    color: #4D5AE5;
+}
+
+.info {
+
+}
+
+.mail {
+    Font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    fon t-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+.mail:hover,
+.mail:focus{
+    color: #4D5AE5;
+}
+.phone {
+    Font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    }
+
+.phone:hover,
+.phone:focus {
+    color: #4D5AE5;
+}
+/* =========HERO=========== */
+.hero-title {
+    font-family: 'Roboto',sans-serif;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    /* color: #FFFFFF; */
+}
+.btn {
+    cursor: pointer;
+}
+.btn:hover,
+.btn:focus {
+    color: #FFFFFF;
+    background: #4D5AE5;
+}
+
+
+/* =========BENEFITS========= */
+.benefits {}
+
+.benefits-list {}
+
+.benefits-item {}
+
+
+/* ==========SERVISES========== */
+.services {}
+
+.services-title {
+    font-family: 'Roboto',sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
+}
+
+.services-list {}
+
+.services-img {}
+
+/* ============TEAM============ */
+
+.team {}
+
+.team-title {
+    font-family: 'Roboto',sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
+}
+
+.team-list {}
+
+.team-item {}
+
+/* ===========FOOTER=========== */
+.footer {}
+
+.logo-part {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #2E2F42;
+
+}
+
+
