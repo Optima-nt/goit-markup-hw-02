@@ -1,17 +1,14 @@
-
-
-/* ul,ol{
-    list-style: none;
-
-} */
-
-/* a{
-    text-decoration: none; так любий тег можна,
-        для всіх елементів
-/* } */  
+ 
+:root   {
+    --accent-color:#4D5AE5;
+    --primary-font: 'Roboto';
+    --secondary-font: 'Raleway';
+    --primary-text-color: #2E2F42;
+    --secondary-text-color:#434455 ;
+}
 body {
-    font-family: 'Roboto',sans-serif;
-    color: #434455;
+    font-family: 'Roboto', sans-serif;
+    
 }
 
 .list   {
@@ -22,22 +19,27 @@ body {
     text-decoration: none;
 }
 .text {
-    font-family: 'Roboto',sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-     color: #434455;
+    
+    
 }
 
 .title {
-    font-family: 'Roboto',sans-serif;
+    font-family:var(--primary-font);
     font-weight: 600;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 24px;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--primary-text-color);
+}
+.btn {
+    cursor: pointer;
+    font-family: var(--primary-font);
+}
+
+.btn:hover,
+.btn:focus {
+    color: #FFFFFF;
+    background: var(--accent-color); 
 }
 
 
@@ -46,10 +48,12 @@ body {
 
 /* =======HEADER======== */
 
-.page-header {}
+.page-header {
+    background-color: #2E2F4214;
+}
 
 .logo {
-    font-family: 'Raleway', sans-serif;
+    font-family:var(--secondary-font);
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
@@ -57,11 +61,26 @@ body {
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4D5AE5;
+    color: var(--accent-color);
 }
 .logo:hover,
 .logo:focus {
-    color: #4D5AE5;
+    color:var(--accent-color);
+}
+.logo-part {
+    font-family: var(--secondary-font);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+}
+.logo-part:hover,
+.logo-part:focus {
+    color: var(--accent-color);
 }
 
 .navigation {}
@@ -71,50 +90,55 @@ body {
 .menu-item {}
 
 .menu-link {
-    font-family: 'Roboto',sans-serif;
+    font-family: var(--primary-font);
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color:var(--primary-text-color);
 }
 .menu-link:hover,
 .menu-link:focus   {
-    color: #4D5AE5;
+    color: var(--accent-color);
 }
 
 .info {
 
 }
+.info-item {}
 
 .mail {
-    Font-family: 'Roboto',sans-serif;
-    font-weight: 400;
-    fon t-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
-.mail:hover,
-.mail:focus{
-    color: #4D5AE5;
-}
-.phone {
-    Font-family: 'Roboto',sans-serif;
+    font-family:var(--primary-font);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
-    }
+    color: var(--secondary-font);
+}
+.mail:hover,
+.mail:focus{
+    color: var(--accent-color);
+}
+.phone {
+    font-family:var(--primary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+ }
+
 
 .phone:hover,
 .phone:focus {
-    color: #4D5AE5;
+    color: var(--accent-color);
 }
 /* =========HERO=========== */
+.hero {
+    background: #2E2F42;
+}
 .hero-title {
-    font-family: 'Roboto',sans-serif;
+    font-family: var(--primary-font);
     font-weight: 600;
     font-size: 56px;
     line-height: 1.07;
@@ -122,36 +146,48 @@ body {
     letter-spacing: 0.02em;
     /* color: #FFFFFF; */
 }
-.btn {
-    cursor: pointer;
-}
-.btn:hover,
-.btn:focus {
-    color: #FFFFFF;
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 32px;
+    gap: 10px;
+    width: 170px;
+    height: 51px;
+    left: 635px;
+    top: 432px;
     background: #4D5AE5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
+
 
 
 /* =========BENEFITS========= */
-.benefits {}
+
+.benefits {
+    background: #1E1E1E;
+}
 
 .benefits-list {}
 
 .benefits-item {}
 
 
-/* ==========SERVISES========== */
-.services {}
+/* ==========SERVICES========== */
+.services {
+    background: #1E1E1E;
+}
 
 .services-title {
-    font-family: 'Roboto',sans-serif;
+    font-family: var(--primary-font);
     font-weight: 600;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: #2E2F42;
+    color: var(--primary-text-color);
 }
 
 .services-list {}
@@ -160,38 +196,211 @@ body {
 
 /* ============TEAM============ */
 
-.team {}
+.team {
+    background: #F4F4FD;
+}
 
 .team-title {
-    font-family: 'Roboto',sans-serif;
+    font-family: var(--primary-font);
     font-weight: 600;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: #2E2F42;
+    color:var(--primary-text-color);
 }
 
 .team-list {}
 
 .team-item {}
 
-/* ===========FOOTER=========== */
+/* ==========FOOTER============ */
+
 .footer {}
 
-.logo-part {
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
+.logo {
+    font-family: var(--secondary-font);
     font-weight: 800;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.33;
     display: flex;
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #2E2F42;
+    color: var(--accent-color);
+}
+
+.logo:hover,
+.logo:focus {
+    color: var(--accent-color);
+}
+
+.logo-part {
+    font-family: var(--secondary-font);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+}
+
+.logo-part:hover,
+.logo-part:focus {
+    color: var(--accent-color);
+}
+/* =======HEADER======== */
+
+.page-header {
+    background-color: #FFFFFF;
+}
+
+.logo {
+    font-family:var(--secondary-font);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+}
+.logo:hover,
+.logo:focus {
+    color:var(--accent-color);
+}
+.logo-part {
+    font-family: var(--secondary-font);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+}
+.logo-part:hover,
+.logo-part:focus {
+    color: var(--accent-color);
+}
+
+.navigation {}
+
+.menu {}
+
+.menu-item {}
+
+.menu-link {
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color:var(--primary-text-color);
+}
+.menu-link:hover,
+.menu-link:focus   {
+    color: var(--accent-color);
+}
+
+.info {
+
+}
+.info-item {}
+
+.mail {
+    font-family:var(--primary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--secondary-font);
+}
+.mail:hover,
+.mail:focus{
+    color: var(--accent-color);
+}
+.phone {
+    font-family:var(--primary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+ }
+
+
+.phone:hover,
+.phone:focus {
+    color: var(--accent-color);
+}
+
+
+
+/* =========LIST-BUTTONS=========== */
+
+.list-buttons {
+    background-color: #FFFFFF;
+}
+
+.menu-buttons {}
+
+.menu-buttons-item {}
+
+
+/* ==========JOBS========== */
+.jobs {
+    background: #1E1E1E;
+}
+
+.jobs-list {}
+
+.jobs-list-item {
 
 }
 
+/* ==========FOOTER============ */
+
+.footer {
+    background: #2E2F42;
+}
+
+.logo {
+    font-family: var(--secondary-font);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+}
+
+.logo:hover,
+.logo:focus {
+    color: var(--accent-color);
+}
+
+.logo-part {
+    font-family: var(--secondary-font);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+}
+
+.logo-part:hover,
+.logo-part:focus {
+    color: var(--accent-color);
+}
 

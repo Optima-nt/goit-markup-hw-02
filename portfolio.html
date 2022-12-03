@@ -6,98 +6,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>goit-markup-hw-01</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+<!-- Header -->
     <header>
-        <a href="https://www.webstudio.kiev.ua"> Webstudio</a>
-        <nav>
-            <ul>
-                <li> <a href="./index.html">Studio</a></li>
-                <li> <a href="./portfolio.html">Portfolio</a></li>
-                <li> <a href="">Contacts</a></li>
+        <a class="logo link" href="">Web</a>
+        <a class="logo-part link" href="">Studio</a>
+        <nav class="navigation">
+            <ul class="menu">
+                <li class="menu-item list"> <a class="menu-link link" href="./index.html">Studio</a></li>
+                <li class="menu-item list"> <a class="menu-link link" href="./portfolio.html">Portfolio</a></li>
+                <li class="menu-item list"> <a class="menu-link link" href="">Contacts</a></li>
             </ul>
         </nav>
-        <ul>
-            <li>
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <ul class="info list">
+            <li class="info-item" >
+                <a class="mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li>
-                <a href="tel:+11(000)111-11-11">+11(000)111-11-11</a>
+            <li class="info-item">
+                <a class="phone link" href="tel:+11(000)111-11-11">+11(000)111-11-11</a>
             </li>
         </ul>
 
     </header>
 
     <main>
-        <section>
-            <ul>
-                <li><button type="button">all</button></li>
-                <li><button type="button">web site</button></li>
-                <li><button type="button">app</button></li>
-                <li><button type="button">design</button></li>
-                <li><button type="button">marketing</button></li>
+<!-- List-buttons -->
+        <section class="list-buttons" >
+            <ul class="menu-buttons list" >
+                <li class="menu-buttons-item" ><button class="btn" type="button">web site</button></li>
+                <li class="menu-buttons-item" ><button class="btn" type="button">app</button></li>
+                <li class="menu-buttons-item" ><button class="btn" type="button">all</button></li>
+                <li class="menu-buttons-item" ><button class="btn" type="button">design</button></li>
+                <li class="menu-buttons-item" ><button class="btn" type="button">marketing</button></li>
             </ul>
         </section>
-
-        <section>
-
-            <ul>
-                <li>
-                    <img src="./image/Photo_1.jpg" alt="Banking">
-                    <h3>Banking App Interface Concept</h3>
-                    <p>App</p>
+<!-- Jobs -->
+        <section class="jobs">
+            <ul class="jobs-list list" >
+                <li class="jobs-list-item" >
+                    <img src="./image/Portfolio/Photo_1.jpg" alt="Banking" width="360" height="300"> 
+                    <h3 class="title" >Banking App Interface Concept</h3>
+                    <p class="text" >App</p>
                 </li>
-                <li>
-                    <img src="./image/Photo_2.jpg" alt="Marketing">
-                    <p>14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
-                    Cloud Storage App</p>
-                    <h3>Cashless Payment</h3>
-                    <p>Marketing</p>
+                <li class="jobs-list-item">
+                    <img src="./image/Portfolio/Photo_2.jpg" alt="Marketing" width="360" height="300">
+                    <a class="link" href=""><p class="text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                        App ·
+                        Cloud Storage App</p></a>
+                    <h3 class="title" >Cashless Payment</h3>
+                    <p class="text" >Marketing</p>
                 </li>
-                <li>
-                    <img src="./image/Photo_3.jpg" alt="Meditaion">
-                    <h3>Meditaion App</h3>
-                    <p>App</p>
+                <li class="jobs-list-item">
+                    <img src="./image/Portfolio/Photo_3.jpg" alt="Meditaion" width="360" height="300">
+                    <h3 class="title" >Meditaion App</h3>
+                    <p class="text" >App</p>
                 </li>
-                <li>
-                    <img src="./image/Photo_4.jpg" alt="Marketing">
-                    <h3>Taxi Service</h3>
-                    <p>Marketing</p>
+                <li class="jobs-list-item">
+                    <img src="./image/Portfolio/Photo_4.jpg" alt="Marketing" width="360" height="300">
+                    <h3 class="title" >Taxi Service</h3>
+                    <p class="text" >Marketing</p>
                 </li>
-                <li>
-                    <img src="./image/Photo_5.jpg" alt="Design">
-                    <h3>Screen Illustrations</h3>
-                    <p>Design</p>
+                <li class="jobs-list-item">
+                    <img src="./image/Portfolio/Photo_5.jpg" alt="Design" width="360" height="300">
+                    <h3 class="title" >Screen Illustrations</h3>
+                    <p class="text" >Design</p>
                 </li>
-                <li>
-                    <img src="./image/Photo_6.jpg" alt="Marketing">
-                    <h3>Online Courses</h3>
-                    <p>Marketing</p>
+                <li class="jobs-list-item">
+                    <img src="./image/Portfolio/Photo_6.jpg" alt="Marketing" width="360" height="300">
+                    <h3 class="title" >Online Courses</h3>
+                    <p class="text" >Marketing</p>
                 </li>
-                <li>
-                    <img src="./image/Photo_7.jpg" alt="Design">
-                    <h3>Instagram Stories Concept</h3>
-                    <p>Design</p>
+                <li class="jobs-list-item">
+                    <img src="./image/Portfolio/Photo_7.jpg" alt="Design" width="360" height="300">
+                    <h3 class="title" >Instagram Stories Concept</h3>
+                    <p class="text" >Design</p>
                 </li>
-                <li>
-                    <img src="./image/Photo_8.jpg" alt="Web Site">
-                    <h3>Organic Food</h3>
-                    <p>Web Site</p>
+                <li class="jobs-list-item">
+                    <img src="./image/Portfolio/Photo_8.jpg" alt="Web Site" width="360" height="300">
+                    <h3 class="title" >Organic Food</h3>
+                    <p class="text" >Web Site</p>
                 </li>
-                <li>
-                    <img src="./image/Photo_9.jpg" alt="Web Site">
-                    <h3>Fresh Coffee</h3>
-                    <p>Web Site</p>
+                <li class="jobs-list-item">
+                    <img src="./image/Portfolio/Photo_9.jpg" alt="Web Site" width="360" height="300">
+                    <h3 class="title" >Fresh Coffee</h3>
+                    <p class="text" >Web Site</p>
                 </li>
             </ul>
 
     </main>
 <!-- Footer -->
-    <footer>
-        <a href="https://www.webstudio.kiev.ua">Webstudio</a>
-        <p>Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+    <footer class="footer">
+        <a class="logo link" href="">Web</a>
+        <a class="logo-part link" href="">Studio</a>
+        <p class="text" >Increase the flow of customers and <br> sales for your business with digital <br> marketing & growth solutions.</p>
     </footer>
 </body>
     
